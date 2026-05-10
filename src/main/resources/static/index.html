@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Registration</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Farmer Registration</h1>
+
+        <form id="farmerForm">
+
+            <input type="text"
+                   id="name"
+                   placeholder="Enter Farmer Name"
+                   required>
+
+            <input type="text"
+                   id="mobile"
+                   placeholder="Enter Mobile Number"
+                   required>
+
+            <input type="text"
+                   id="village"
+                   placeholder="Enter Village"
+                   required>
+
+            <button type="submit">
+                Register Farmer
+            </button>
+
+        </form>
+
+        <p id="message"></p>
+        <h2>Registered Farmers</h2>
+        <input
+    type="text"
+    id="searchInput"
+    placeholder="Search Farmer by Name or Village"
+    onkeyup="searchFarmers()"
+/>
+
+<table border="1" width="100%">
+
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Mobile</th>
+            <th>Village</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+
+    <tbody id="farmerTableBody">
+
+    </tbody>
+
+</table>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

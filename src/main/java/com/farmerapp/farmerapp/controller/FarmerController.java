@@ -3,13 +3,16 @@ package com.farmerapp.farmerapp.controller;
 import com.farmerapp.farmerapp.model.Farmer;
 import com.farmerapp.farmerapp.service.FarmerService;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/farmers")
+
 public class FarmerController {
 
     @Autowired
@@ -17,26 +20,29 @@ public class FarmerController {
 
     @PostMapping("/register")
     public Farmer registerFarmer(@RequestBody Farmer farmer) {
+
         return farmerService.saveFarmer(farmer);
     }
 
     @GetMapping
-public List<Farmer> getAllFarmers() {
-    return farmerService.getAllFarmers();
-}
+    public List<Farmer> getAllFarmers() {
 
-@PutMapping("/{id}")
-public Farmer updateFarmer(@PathVariable Long id,
-                           @RequestBody Farmer farmer) {
+        return farmerService.getAllFarmers();
+    }
 
-    return farmerService.updateFarmer(id, farmer);
-}
+    @PutMapping("/{id}")
+    public Farmer updateFarmer(
+            @PathVariable Long id,
+            @RequestBody Farmer farmer) {
 
-@DeleteMapping("/{id}")
-public String deleteFarmer(@PathVariable Long id) {
+        return farmerService.updateFarmer(id, farmer);
+    }
 
-    farmerService.deleteFarmer(id);
+    @DeleteMapping("/{id}")
+    public String deleteFarmer(@PathVariable Long id) {
 
-    return "Farmer deleted successfully";
-}
+        farmerService.deleteFarmer(id);
+
+        return "Farmer deleted successfully";
+    }
 }
