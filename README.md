@@ -34,7 +34,7 @@ A Full Stack Farmer Management Application built using Spring Boot, MySQL, HTML,
 ---
 
 ### Search Bar
-![Search Bar](screenshots/search bar.png)
+![Search Bar](screenshots/search-bar.png)
 
 ---
 
