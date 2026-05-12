@@ -28,7 +28,18 @@ A Full Stack Farmer Management Application built using Spring Boot, MySQL, HTML,
 
 ## Screenshots
 
-(Add screenshots here)
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+---
+
+### Search Bar
+![Search Bar](screenshots/search bar.png)
+
+---
+
+### Delete Confirmation
+![Delete Confirmation](screenshots/delete-popup.png)
 
 ## Author
 
