@@ -28,6 +28,10 @@ A Full Stack Farmer Management Application built using Spring Boot, MySQL, HTML,
 
 ## Screenshots
 
+## Screenshots
+
+## Screenshots
+
 ### Dashboard
 ![Dashboard](screenshots/dashboard.png)
 
@@ -40,7 +44,6 @@ A Full Stack Farmer Management Application built using Spring Boot, MySQL, HTML,
 
 ### Delete Confirmation
 ![Delete Confirmation](screenshots/delete-popup.png)
-
 ## Author
 
 Harish Kakumani
